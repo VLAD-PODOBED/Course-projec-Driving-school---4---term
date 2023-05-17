@@ -1,0 +1,56 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Storyboard x:Key="sbShowLeftMenu">
+        <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-150,0,0,0" To="0,0,0,0" DecelerationRatio=".9" Duration="0:0:1"/>
+    </Storyboard>
+    <Storyboard x:Key="sbHideLeftMenu">
+        <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="-150,0,0,0" DecelerationRatio=".9" Duration="0:0:1"/>
+    </Storyboard>
+    <Style x:Key="spSlideLeft" TargetType="StackPanel">
+        <Style.Triggers>
+            <EventTrigger x:Name="Enter" RoutedEvent="StackPanel.MouseEnter">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-150,0,0,0" To="0,0,0,0" DecelerationRatio=".9" Duration="0:0:0.6"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ThicknessAnimation Storyboard.TargetProperty="Margin" To="-150,0,0,0" DecelerationRatio=".9" Duration="0:0:0.3"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="MenuLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Padding" Value="15,0,0,0"/>
+        <Setter Property="Foreground" Value="#FFACB5B9"/>
+        <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>
+        <Setter Property="TextOptions.TextRenderingMode" Value="Auto"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="False">
+                <Setter Property="Foreground" Value="#FFACB5B9"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="MenuDecLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Padding" Value="15,0,0,0"/>
+        <Setter Property="Foreground" Value="#FFACB5B9"/>
+        <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>
+        <Setter Property="TextOptions.TextRenderingMode" Value="Auto"/>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:v="clr-namespace:System;assembly=mscorlib">
+    
+    <v:String x:Key="Acc">Нет аккаунта?</v:String>
+    <v:String x:Key="Reg">Регистрация</v:String>
+    <v:String x:Key="Exit">Войти</v:String>
+    <v:String x:Key="Inf">Информация о занятии:</v:String>
+    <v:String x:Key="Add">Добавить</v:String>
+    <v:String x:Key="Del">Удалить</v:String>
+    <v:String x:Key="Photo">Выбрать фото</v:String>
+    <v:String x:Key="Save">Сохранить</v:String>
+    <v:String x:Key="Cancel">Отмена</v:String>
+    <v:String x:Key="Name">Имя </v:String>
+    <v:String x:Key="YaerCar">Год выпуска:</v:String>
+    <v:String x:Key="Categori">Категория ТС:</v:String>
+    <v:String x:Key="Infr">Основная информация: </v:String>
+    <v:String x:Key="Contact">Контакты:</v:String>
+    <v:String x:Key="BirthDate">Дата рождения:</v:String>
+    <v:String x:Key="Confirm">Подтвердить</v:String>
+    <v:String x:Key="Car">Машина</v:String>
+    <v:String x:Key="Reviews">Отзывы</v:String>
+    <v:String x:Key="Inst">Автоинструктор</v:String>
+    <v:String x:Key="eDIT">Изменить</v:String>
+    <v:String x:Key="TTa">Расписание</v:String>
+    <v:String x:Key="Lesson">Мои занятия</v:String>
+    <v:String x:Key="Profil">Мой профиль</v:String>
+    <v:String x:Key="Team">Наша команда</v:String>
+    <v:String x:Key="Users">Пользователи</v:String>
+    <v:String x:Key="Admin">Администрирование</v:String>
+    <v:String x:Key="Instru">Инструкторы</v:String>
+    <v:String x:Key="CaarP">Автопарк</v:String>
+    <v:String x:Key="Exitt">Выход</v:String>
+    <v:String x:Key="Acco">Смена аккаунта</v:String>
+    <v:String x:Key="Enter">Введите...</v:String>
+    <v:String x:Key="Pass">Пароль</v:String>
+    <v:String x:Key="Log">Логин</v:String>
+    <v:String x:Key="PPass">Подтвердите пароль</v:String>
+    <v:String x:Key="FIO">ФИО</v:String>
+</ResourceDictionary>

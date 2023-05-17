@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище PlannnerModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="AdminEMAIL" Type="nvarchar" MaxLength="20" />
+    <Property Name="HashPass" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="CarID" />
+    </Key>
+    <Property Name="CarID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CarName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ImageIndex" Type="int" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="CarYear" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="CategoryName" />
+    </Key>
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="CategoryDescription" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClassIntervals">
+    <Key>
+      <PropertyRef Name="IntervalNumber" />
+    </Key>
+    <Property Name="IntervalNumber" Type="int" Nullable="false" />
+    <Property Name="TimeInterval" Type="nvarchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FeedBacks">
+    <Key>
+      <PropertyRef Name="FeedBackID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="InstructorID" Type="int" Nullable="false" />
+    <Property Name="FeedBackMessage" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FeedBackID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Instructors">
+    <Key>
+      <PropertyRef Name="InstructorID" />
+    </Key>
+    <Property Name="InstructorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIO" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="ImageIndex" Type="int" Nullable="false" />
+    <Property Name="CarID" Type="int" />
+    <Property Name="Login" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="InstructorBirth" Type="datetime" Nullable="false" />
+    <Property Name="InstructorPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="InstructorVK" Type="nvarchar" MaxLength="20" />
+    <Property Name="InstructorEMAIL" Type="nvarchar" MaxLength="20" />
+    <Property Name="HashPass" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TimeTables">
+    <Key>
+      <PropertyRef Name="ClassID" />
+    </Key>
+    <Property Name="ClassID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateOfClass" Type="date" Nullable="false" />
+    <Property Name="IntervalCode" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="InstructorID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIO" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="BirthDate" Type="datetime" Nullable="false" />
+    <Property Name="ImageIndex" Type="int" Nullable="false" />
+    <Property Name="UserPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="UserVK" Type="nvarchar" MaxLength="20" />
+    <Property Name="UserEmail" Type="nvarchar" MaxLength="20" />
+    <Property Name="Login" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="HashPass" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Cars__CategoryNa__2A4B4B5E">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="1" />
+    <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="CategoryName" />
+      </Principal>
+      <Dependent Role="Cars">
+        <PropertyRef Name="CategoryName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FeedBacks__Instr__30F848ED">
+    <End Role="Instructors" Type="Self.Instructors" Multiplicity="1" />
+    <End Role="FeedBacks" Type="Self.FeedBacks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instructors">
+        <PropertyRef Name="InstructorID" />
+      </Principal>
+      <Dependent Role="FeedBacks">
+        <PropertyRef Name="InstructorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FeedBacks__UserI__300424B4">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="FeedBacks" Type="Self.FeedBacks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="FeedBacks">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Instructo__CarID__2D27B809">
+    <End Role="Cars" Type="Self.Cars" Multiplicity="0..1" />
+    <End Role="Instructors" Type="Self.Instructors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cars">
+        <PropertyRef Name="CarID" />
+      </Principal>
+      <Dependent Role="Instructors">
+        <PropertyRef Name="CarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TimeTable__Instr__35BCFE0A">
+    <End Role="Instructors" Type="Self.Instructors" Multiplicity="1" />
+    <End Role="TimeTables" Type="Self.TimeTables" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instructors">
+        <PropertyRef Name="InstructorID" />
+      </Principal>
+      <Dependent Role="TimeTables">
+        <PropertyRef Name="InstructorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TimeTable__Inter__33D4B598">
+    <End Role="ClassIntervals" Type="Self.ClassIntervals" Multiplicity="1" />
+    <End Role="TimeTables" Type="Self.TimeTables" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClassIntervals">
+        <PropertyRef Name="IntervalNumber" />
+      </Principal>
+      <Dependent Role="TimeTables">
+        <PropertyRef Name="IntervalCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TimeTable__UserI__34C8D9D1">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="TimeTables" Type="Self.TimeTables" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="TimeTables">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище PlannnerModelContainer">
+    <EntitySet Name="Admins" EntityType="Self.Admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cars" EntityType="Self.Cars" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClassIntervals" EntityType="Self.ClassIntervals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FeedBacks" EntityType="Self.FeedBacks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Instructors" EntityType="Self.Instructors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TimeTables" EntityType="Self.TimeTables" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Cars__CategoryNa__2A4B4B5E" Association="Self.FK__Cars__CategoryNa__2A4B4B5E">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Cars" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FeedBacks__Instr__30F848ED" Association="Self.FK__FeedBacks__Instr__30F848ED">
+      <End Role="Instructors" EntitySet="Instructors" />
+      <End Role="FeedBacks" EntitySet="FeedBacks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FeedBacks__UserI__300424B4" Association="Self.FK__FeedBacks__UserI__300424B4">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="FeedBacks" EntitySet="FeedBacks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Instructo__CarID__2D27B809" Association="Self.FK__Instructo__CarID__2D27B809">
+      <End Role="Cars" EntitySet="Cars" />
+      <End Role="Instructors" EntitySet="Instructors" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TimeTable__Instr__35BCFE0A" Association="Self.FK__TimeTable__Instr__35BCFE0A">
+      <End Role="Instructors" EntitySet="Instructors" />
+      <End Role="TimeTables" EntitySet="TimeTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TimeTable__Inter__33D4B598" Association="Self.FK__TimeTable__Inter__33D4B598">
+      <End Role="ClassIntervals" EntitySet="ClassIntervals" />
+      <End Role="TimeTables" EntitySet="TimeTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TimeTable__UserI__34C8D9D1" Association="Self.FK__TimeTable__UserI__34C8D9D1">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="TimeTables" EntitySet="TimeTables" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DriverPlanner.Command.Base.Command" Collapsed="true">
+    <Position X="3" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\Base\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Command.LambdaCommand" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <InheritanceLine Type="DriverPlanner.Command.Base.Command" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3.75" Y="4.562" />
+        <Point X="3.75" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\LambdaCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Command.UpdateViewCommand" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQQAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command\UpdateViewCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Data.DriverPlanner_DB" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAACACAIAAAAAAAIACAQAAAAAAEAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Data\DriverPlanner_DB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Data.DriverPlannerService" Collapsed="true">
+    <Position X="6.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAEAAAAQICAAAiICBAAAAAISAQAAgAQQAAAABAAIBQA=</HashCode>
+      <FileName>Data\DriverPlannerService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Entities.Admin" Collapsed="true">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAABAAAAAAAAQAAAAAAAAAAAAQAIAAAAA=</HashCode>
+      <FileName>Entities\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Entities.BaseUser">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\BaseUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Entities.Cars" Collapsed="true">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAQAAAAAAAAAAAACAAAAAAAAAAAAAASAA=</HashCode>
+      <FileName>Entities\Cars.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Entities.Categories" Collapsed="true">
+    <Position X="6.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Entities\Categories.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Entities.ClassInterval" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ClassInterval.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Entities.FeedBacks" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAgAACAAAAoAAAQAAAAAAAA=</HashCode>
+      <FileName>Entities\FeedBacks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Entities.Instructor" Collapsed="true">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACAAAAAAQAAAEAAAAASAAAACAAAAAAAAAQAIAASAA=</HashCode>
+      <FileName>Entities\Instructor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Entities.TimeTable" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABAAAAAAAAAAAAEAAAAAgAACAAAQAgAAQAAAAAAAA=</HashCode>
+      <FileName>Entities\TimeTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Entities.User" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAEAAAEAAAAAAwAAAAgAAAAAAgQAIAAQAA=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Exceptions.EmailDuplicateException" Collapsed="true">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\EmailDuplicateException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Exceptions.LoginDuplicateException" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Exceptions\LoginDuplicateException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Attribute.BirthDateAtribute" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Attribute\BirthDateAtribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Attribute.FIoAttribute" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Attribute\FIoAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Attribute.LoginAttribute" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Attribute\LoginAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Attribute.Password" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Attribute\Password.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Attribute.PhoneNumber" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Attribute\PhoneNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Validator.MyValidator" Collapsed="true">
+    <Position X="4.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Validator\MyValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.ImageConverter.ImageConverter" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\ImageConverter\ImageConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Hash.HashPassword" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Hash\HashPassword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.FileDialog.FileSelectorDialog" Collapsed="true">
+    <Position X="4.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\FileDialog\FileSelectorDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Converters.ClassDateToBackGroundConverter" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Converters\ClassDateToBackGroundConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Converters.DayOfWeekToString" Collapsed="true">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Converters\DayOfWeekToString.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Converters.FioToShortFioConverter" Collapsed="true">
+    <Position X="10" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Converters\FioToShortFioConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Converters.IndexToCarImage" Collapsed="true">
+    <Position X="4.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Converters\IndexToCarImage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Converters.IndexToImageConverter" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Converters\IndexToImageConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Converters.PropertyToImageConverter" Collapsed="true">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Converters\PropertyToImageConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Infrastructure.Converters.SocialNetworksConverter" Collapsed="true">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Converters\SocialNetworksConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.Models.Classes.CurrentUserSingleton" Collapsed="true">
+    <Position X="8.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAQAAAAAAAAAAASAIAAAA=</HashCode>
+      <FileName>Models\Classes\CurrentUserSingleton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.Base.ViewModel" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Base\ViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.AdminTasksViewModel" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAABAAAAABAAABAAAAggICACACQABA=</HashCode>
+      <FileName>ViewModels\AdminTasksViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.AutoParkViewModel" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAiCQAAQAAAABQAgAAIAAAGIAAgAIAIAA=</HashCode>
+      <FileName>ViewModels\AutoParkViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.CheckCarViewModel" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CheckCarViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.CreateCarViewModel" Collapsed="true">
+    <Position X="13.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAAAMAABIwBQAgAAAAIAAagAAQAEQAAAAQAAUAAQAY=</HashCode>
+      <FileName>ViewModels\CreateCarViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.CreateInstructorViewModel" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>goQAAMAAAQQIgABEAQAkgAQQAAxAACASABASKSIAAAM=</HashCode>
+      <FileName>ViewModels\CreateInstructorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.EditProfileViewModel" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>goAAAEAAQKAMhABEAQAkAIQQBAREAAAQgBASKwIAABE=</HashCode>
+      <FileName>ViewModels\EditProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.InstructorsExplorerViewModel" Collapsed="true">
+    <Position X="15" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAACAAQAAQgAABgAAACAFAGAAQAAAAAIAggAEEAgA=</HashCode>
+      <FileName>ViewModels\InstructorsExplorerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.InstructorTaskViewModel" Collapsed="true">
+    <Position X="11.75" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="DriverPlanner.ViewModels.Base.ViewModel" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="2.312" />
+        <Point X="12.5" Y="2.48" />
+        <Point X="13.27" Y="2.48" />
+        <Point X="13.27" Y="3.969" />
+        <Point X="12.562" Y="3.969" />
+        <Point X="12.562" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAABAAAAAICAAAIAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\InstructorTaskViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.LoginViewModel" Collapsed="true">
+    <Position X="13.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAAAAAEAMAAAAAACAAAABAAACAAAQYAAAIAE=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.MainViewModel" Collapsed="true">
+    <Position X="13.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.MyTasksViewModel" Collapsed="true">
+    <Position X="13.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAgAAAAAAAAAACAAIAAAFAAAgAAAAggICAgACAABQ=</HashCode>
+      <FileName>ViewModels\MyTasksViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.OverviewInstructorViewModel" Collapsed="true">
+    <Position X="15" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAgAAAAAA=</HashCode>
+      <FileName>ViewModels\OverviewInstructorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.ProfileViewModel" Collapsed="true">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.RegisterViewModel" Collapsed="true">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgQAAAAAACAIAAAEAAAAAASEAAABAAgSAQAQIABAQAE=</HashCode>
+      <FileName>ViewModels\RegisterViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.TimeTableViewModel" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAgAAECAAQAECAAAQAAAFBAAAQICAIgAAAAAAAAgA=</HashCode>
+      <FileName>ViewModels\TimeTableViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.UsersExplorerViewModel" Collapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAIIAAAAAAEAAAAFIRAAAAAAAAIAAgAAAAAA=</HashCode>
+      <FileName>ViewModels\UsersExplorerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.ViewInstructorsViewModel" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AJAAACCAAAAAAAAABAACBABgAAAKAAQkAACAKkCEABA=</HashCode>
+      <FileName>ViewModels\ViewInstructorsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.ViewProfileViewModel" Collapsed="true">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACYEAAQCIIAACAAAAEQAYAIAQEQBAQiCAQIAAAAFk=</HashCode>
+      <FileName>ViewModels\ViewProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriverPlanner.ViewModels.WorkingViewModel" Collapsed="true">
+    <Position X="15" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAQAAAAAgCAAAABCAAAAAAABgAAAAAAAAAhAAAA=</HashCode>
+      <FileName>ViewModels\WorkingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DriverPlanner.Entities.ERole" Collapsed="true">
+    <Position X="8.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAQEAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ERole.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
